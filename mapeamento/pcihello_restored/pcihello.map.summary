@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Mon Oct 17 09:46:53 2022
+Quartus II 64-Bit Version : 14.0.0 Build 200 06/17/2014 SJ Full Version
+Revision Name : pcihello
+Top-level Entity Name : pcihello
+Family : Cyclone IV GX
+Total logic elements : 6,246
+    Total combinational functions : 4,963
+    Dedicated logic registers : 3,475
+Total registers : 3475
+Total pins : 116
+Total virtual pins : 0
+Total memory bits : 54,656
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 1
+Total GXB Receiver Channel PMA : 1
+Total GXB Transmitter Channel PCS : 1
+Total GXB Transmitter Channel PMA : 1
+Total PLLs : 1
