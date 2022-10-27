@@ -29,7 +29,7 @@
  -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
  --                 of its bank.
  --					Bank 3:		2.5V
- --					Bank 4:		3.3V
+ --					Bank 4:		2.5V
  --					Bank 5:		2.5V
  --					Bank 6:		2.5V
  --					Bank 7:		2.5V
@@ -96,7 +96,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : A18       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : A19       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A20       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A21       :        :                   :         : 7         :                
-PCIE_RX_P[1]                 : A22       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A22       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A23       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A24       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A25       :        :                   :         : 7         :                
@@ -151,9 +151,9 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AB14      :        :                   :      
 VCCIO3                       : AB15      : power  :                   : 2.5V    : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB16      :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB17      :        :                   :         : 4         :                
-VCCIO4                       : AB18      : power  :                   : 3.3V    : 4         :                
-VCCIO4                       : AB19      : power  :                   : 3.3V    : 4         :                
-VCCIO4                       : AB20      : power  :                   : 3.3V    : 4         :                
+VCCIO4                       : AB18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB20      : power  :                   : 2.5V    : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB21      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB22      :        :                   :         : 4         :                
 VCCD_PLL                     : AB23      : power  :                   : 1.2V    :           :                
@@ -181,11 +181,11 @@ GND                          : AC14      : gnd    :                   :         
 VCCIO3                       : AC15      : power  :                   : 2.5V    : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC16      :        :                   :         : 3         :                
 GND                          : AC17      : gnd    :                   :         :           :                
-VCCIO4                       : AC18      : power  :                   : 3.3V    : 4         :                
-VCCIO4                       : AC19      : power  :                   : 3.3V    : 4         :                
+VCCIO4                       : AC18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC19      : power  :                   : 2.5V    : 4         :                
 GND                          : AC20      : gnd    :                   :         :           :                
-VCCIO4                       : AC21      : power  :                   : 3.3V    : 4         :                
-VCCIO4                       : AC22      : power  :                   : 3.3V    : 4         :                
+VCCIO4                       : AC21      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC22      : power  :                   : 2.5V    : 4         :                
 GND                          : AC23      : gnd    :                   :         :           :                
 GND                          : AC24      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC25      :        :                   :         : 5         :                
@@ -210,11 +210,11 @@ VCCIO3                       : AD13      : power  :                   : 2.5V    
 VCCIO3                       : AD14      : power  :                   : 2.5V    : 3         :                
 VCCIO3                       : AD15      : power  :                   : 2.5V    : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD16      :        :                   :         : 4         :                
-VCCIO4                       : AD17      : power  :                   : 3.3V    : 4         :                
-VCCIO4                       : AD18      : power  :                   : 3.3V    : 4         :                
-VCCIO4                       : AD19      : power  :                   : 3.3V    : 4         :                
-VCCIO4                       : AD20      : power  :                   : 3.3V    : 4         :                
-VCCIO4                       : AD21      : power  :                   : 3.3V    : 4         :                
+VCCIO4                       : AD17      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD21      : power  :                   : 2.5V    : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD22      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD23      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD24      :        :                   :         : 4         :                
@@ -271,7 +271,7 @@ GND                          : AF14      : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF15      :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF16      :        :                   :         : 4         :                
 GND                          : AF17      : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF18      :        :                   :         : 4         :                
+PCIE_TX_P[1]                 : AF18      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF19      :        :                   :         : 4         :                
 GND                          : AF20      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF21      :        :                   :         : 4         :                
@@ -452,13 +452,13 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : C17       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : C18       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C19       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C20       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C21       :        :                   :         : 7         :                
+PCIE_RX_P[1]                 : C21       : input  : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C22       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C23       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C24       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C25       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C26       :        :                   :         : 7         :                
-PCIE_TX_P[1]                 : C27       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C27       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C28       :        :                   :         : 7         :                
 PCIE_WAKE_N                  : C29       : output : 2.5 V             :         : 6         : Y              
 SW[16]                       : C30       : input  : 2.5 V             :         : 6         : Y              

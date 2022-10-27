@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for pcihello
-Mon Oct 17 09:48:05 2022
+Wed Oct 26 21:32:56 2022
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
 
 
@@ -108,17 +108,17 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; SDC File List                                                                                                                         ;
-+---------------------------------------------------------------------------------------------------+--------+--------------------------+
-; SDC File Path                                                                                     ; Status ; Read at                  ;
-+---------------------------------------------------------------------------------------------------+--------+--------------------------+
-; pcihellocore/synthesis/submodules/altera_reset_controller.sdc                                     ; OK     ; Mon Oct 17 09:48:00 2022 ;
-; pcihellocore/synthesis/submodules/altera_pci_express.sdc                                          ; OK     ; Mon Oct 17 09:48:00 2022 ;
-; pcihello.sdc                                                                                      ; OK     ; Mon Oct 17 09:48:00 2022 ;
-; d:/users/lorl/desktop/pcihello_restored/db/ip/pcihellocore/submodules/altera_pci_express.sdc      ; OK     ; Mon Oct 17 09:48:00 2022 ;
-; d:/users/lorl/desktop/pcihello_restored/db/ip/pcihellocore/submodules/altera_reset_controller.sdc ; OK     ; Mon Oct 17 09:48:00 2022 ;
-+---------------------------------------------------------------------------------------------------+--------+--------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; SDC File List                                                                                                                                                                            ;
++------------------------------------------------------------------------------------------------------------------------------------------------------+--------+--------------------------+
+; SDC File Path                                                                                                                                        ; Status ; Read at                  ;
++------------------------------------------------------------------------------------------------------------------------------------------------------+--------+--------------------------+
+; pcihellocore/synthesis/submodules/altera_reset_controller.sdc                                                                                        ; OK     ; Wed Oct 26 21:32:52 2022 ;
+; pcihellocore/synthesis/submodules/altera_pci_express.sdc                                                                                             ; OK     ; Wed Oct 26 21:32:52 2022 ;
+; pcihello.sdc                                                                                                                                         ; OK     ; Wed Oct 26 21:32:52 2022 ;
+; d:/users/lorl/downloads/dj-table-py-master/dj-table-py-master/mapeamento/pcihello_restored/db/ip/pcihellocore/submodules/altera_pci_express.sdc      ; OK     ; Wed Oct 26 21:32:52 2022 ;
+; d:/users/lorl/downloads/dj-table-py-master/dj-table-py-master/mapeamento/pcihello_restored/db/ip/pcihellocore/submodules/altera_reset_controller.sdc ; OK     ; Wed Oct 26 21:32:53 2022 ;
++------------------------------------------------------------------------------------------------------------------------------------------------------+--------+--------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -838,8 +838,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 23    ; 23   ;
 ; Unconstrained Input Port Paths  ; 25    ; 25   ;
-; Unconstrained Output Ports      ; 82    ; 82   ;
-; Unconstrained Output Port Paths ; 82    ; 82   ;
+; Unconstrained Output Ports      ; 83    ; 83   ;
+; Unconstrained Output Port Paths ; 83    ; 83   ;
 +---------------------------------+-------+------+
 
 
@@ -849,7 +849,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Full Version
-    Info: Processing started: Mon Oct 17 09:47:57 2022
+    Info: Processing started: Wed Oct 26 21:32:50 2022
 Info: Command: quartus_sta pcihello -c pcihello
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -874,11 +874,11 @@ Info (332110): Deriving PLL clocks
     Info (332110): create_generated_clock -source {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|transmit_pcs0|hiptxclkout} -divide_by 2 -duty_cycle 50.00 -name {u0|pcie_hard_ip_0|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|pclkch0} {u0|pcie_hard_ip_0|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|pclkch0}
     Info (332110): create_generated_clock -source {u0|pcie_hard_ip_0|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|pclkch0} -duty_cycle 50.00 -name {u0|pcie_hard_ip_0|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout} {u0|pcie_hard_ip_0|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout}
     Info (332110): create_generated_clock -source {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|clk[1]} -duty_cycle 50.00 -name {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|transmit_pma0|clockout} {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|transmit_pma0|clockout}
+    Info (332110): create_generated_clock -source {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|icdrclk} -divide_by 5 -duty_cycle 50.00 -name {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|receive_pma0|clockout} {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|receive_pma0|clockout}
     Info (332110): create_generated_clock -source {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|inclk[0]} -divide_by 2 -multiply_by 25 -duty_cycle 50.00 -name {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|icdrclk} {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|icdrclk}
     Info (332110): create_generated_clock -source {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|inclk[0]} -divide_by 2 -multiply_by 25 -duty_cycle 50.00 -name {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|clk[0]} {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|clk[0]}
     Info (332110): create_generated_clock -source {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|inclk[0]} -divide_by 2 -multiply_by 5 -duty_cycle 50.00 -name {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|clk[1]} {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|clk[1]}
     Info (332110): create_generated_clock -source {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|inclk[0]} -divide_by 2 -multiply_by 5 -duty_cycle 20.00 -name {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|clk[2]} {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|clk[2]}
-    Info (332110): create_generated_clock -source {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|icdrclk} -divide_by 5 -duty_cycle 50.00 -name {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|receive_pma0|clockout} {u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|receive_pma0|clockout}
     Info (332110): set_max_delay -to [get_ports { pcihellocore:u0|pcihellocore_pcie_hard_ip_0:pcie_hard_ip_0|pcihellocore_pcie_hard_ip_0_altgx_internal:altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8:pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|receive_pcs0~OBSERVABLEQUADRESET }] 20.000
     Info (332110): set_min_delay -to [get_ports { pcihellocore:u0|pcihellocore_pcie_hard_ip_0:pcie_hard_ip_0|pcihellocore_pcie_hard_ip_0_altgx_internal:altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8:pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|receive_pcs0~OBSERVABLEQUADRESET }] 0.000
     Info (332110): set_max_delay -to [get_ports { pcihellocore:u0|pcihellocore_pcie_hard_ip_0:pcie_hard_ip_0|pcihellocore_pcie_hard_ip_0_altgx_internal:altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8:pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|receive_pcs0~OBSERVABLE_DIGITAL_RESET }] 20.000
@@ -894,7 +894,7 @@ Info (332110): Deriving PLL clocks
     Info (332110): set_max_delay -to [get_ports { pcihellocore:u0|pcihellocore_pcie_hard_ip_0:pcie_hard_ip_0|pcihellocore_pcie_hard_ip_0_altgx_internal:altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8:pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|transmit_pcs0~OBSERVABLE_DIGITAL_RESET }] 20.000
     Info (332110): set_min_delay -to [get_ports { pcihellocore:u0|pcihellocore_pcie_hard_ip_0:pcie_hard_ip_0|pcihellocore_pcie_hard_ip_0_altgx_internal:altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8:pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|transmit_pcs0~OBSERVABLE_DIGITAL_RESET }] 0.000
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
-Info (332104): Reading SDC File: 'd:/users/lorl/desktop/pcihello_restored/db/ip/pcihellocore/submodules/altera_pci_express.sdc'
+Info (332104): Reading SDC File: 'd:/users/lorl/downloads/dj-table-py-master/dj-table-py-master/mapeamento/pcihello_restored/db/ip/pcihellocore/submodules/altera_pci_express.sdc'
 Warning (332049): Ignored create_clock at altera_pci_express.sdc(14): Argument <targets> is not an object ID
     Info (332050): create_clock -period "100 MHz" -name {refclk_pci_express} {*refclk_export}
 Warning (332049): Ignored set_false_path at altera_pci_express.sdc(16): Argument <to> is not an object ID
@@ -902,7 +902,7 @@ Warning (332049): Ignored set_false_path at altera_pci_express.sdc(16): Argument
 Warning (332049): Ignored set_false_path at altera_pci_express.sdc(17): Argument <to> is not an object ID
     Info (332050): set_false_path -to {*rx_digitalreset_reg0c[0]}
 Warning (332174): Ignored filter at altera_pci_express.sdc(18): *central_clk_div0* could not be matched with a clock
-Info (332104): Reading SDC File: 'd:/users/lorl/desktop/pcihello_restored/db/ip/pcihellocore/submodules/altera_reset_controller.sdc'
+Info (332104): Reading SDC File: 'd:/users/lorl/downloads/dj-table-py-master/dj-table-py-master/mapeamento/pcihello_restored/db/ip/pcihellocore/submodules/altera_reset_controller.sdc'
 Warning (332087): The master clock for this clock assignment could not be derived.  Clock: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|clk[1] was not created.
     Warning (332035): No clocks found on or feeding the specified source node: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|inclk[0]
 Warning (332086): Ignoring clock spec: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|transmit_pma0|clockout Reason: Clock derived from ignored clock: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|clk[1].  Clock assignment is being ignored.
@@ -911,11 +911,11 @@ Warning (332086): Ignoring clock spec: u0|pcie_hard_ip_0|pcie_internal_hip|cyclo
 Warning (332086): Ignoring clock spec: u0|pcie_hard_ip_0|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout Reason: Clock derived from ignored clock: u0|pcie_hard_ip_0|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|pclkch0.  Clock assignment is being ignored.
 Warning (332087): The master clock for this clock assignment could not be derived.  Clock: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|icdrclk was not created.
     Warning (332035): No clocks found on or feeding the specified source node: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|inclk[0]
+Warning (332086): Ignoring clock spec: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|receive_pma0|clockout Reason: Clock derived from ignored clock: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|icdrclk.  Clock assignment is being ignored.
 Warning (332087): The master clock for this clock assignment could not be derived.  Clock: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|clk[0] was not created.
     Warning (332035): No clocks found on or feeding the specified source node: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|inclk[0]
 Warning (332087): The master clock for this clock assignment could not be derived.  Clock: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|clk[2] was not created.
     Warning (332035): No clocks found on or feeding the specified source node: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|inclk[0]
-Warning (332086): Ignoring clock spec: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|receive_pma0|clockout Reason: Clock derived from ignored clock: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|icdrclk.  Clock assignment is being ignored.
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|icdrclk was found missing 1 generated clock that corresponds to a base clock with a period of: 10.000
@@ -946,11 +946,11 @@ Warning (332086): Ignoring clock spec: u0|pcie_hard_ip_0|pcie_internal_hip|cyclo
 Warning (332086): Ignoring clock spec: u0|pcie_hard_ip_0|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout Reason: Clock derived from ignored clock: u0|pcie_hard_ip_0|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|pclkch0.  Clock assignment is being ignored.
 Warning (332087): The master clock for this clock assignment could not be derived.  Clock: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|icdrclk was not created.
     Warning (332035): No clocks found on or feeding the specified source node: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|inclk[0]
+Warning (332086): Ignoring clock spec: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|receive_pma0|clockout Reason: Clock derived from ignored clock: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|icdrclk.  Clock assignment is being ignored.
 Warning (332087): The master clock for this clock assignment could not be derived.  Clock: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|clk[0] was not created.
     Warning (332035): No clocks found on or feeding the specified source node: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|inclk[0]
 Warning (332087): The master clock for this clock assignment could not be derived.  Clock: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|clk[2] was not created.
     Warning (332035): No clocks found on or feeding the specified source node: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|inclk[0]
-Warning (332086): Ignoring clock spec: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|receive_pma0|clockout Reason: Clock derived from ignored clock: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|icdrclk.  Clock assignment is being ignored.
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|icdrclk was found missing 1 generated clock that corresponds to a base clock with a period of: 10.000
@@ -977,11 +977,11 @@ Warning (332086): Ignoring clock spec: u0|pcie_hard_ip_0|pcie_internal_hip|cyclo
 Warning (332086): Ignoring clock spec: u0|pcie_hard_ip_0|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|coreclkout Reason: Clock derived from ignored clock: u0|pcie_hard_ip_0|pcie_internal_hip|cyclone_iii.cycloneiv_hssi_pcie_hip|pclkch0.  Clock assignment is being ignored.
 Warning (332087): The master clock for this clock assignment could not be derived.  Clock: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|icdrclk was not created.
     Warning (332035): No clocks found on or feeding the specified source node: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|inclk[0]
+Warning (332086): Ignoring clock spec: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|receive_pma0|clockout Reason: Clock derived from ignored clock: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|icdrclk.  Clock assignment is being ignored.
 Warning (332087): The master clock for this clock assignment could not be derived.  Clock: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|clk[0] was not created.
     Warning (332035): No clocks found on or feeding the specified source node: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|inclk[0]
 Warning (332087): The master clock for this clock assignment could not be derived.  Clock: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|clk[2] was not created.
     Warning (332035): No clocks found on or feeding the specified source node: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|inclk[0]
-Warning (332086): Ignoring clock spec: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|receive_pma0|clockout Reason: Clock derived from ignored clock: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|icdrclk.  Clock assignment is being ignored.
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: u0|pcie_hard_ip_0|altgx_internal|pcihellocore_pcie_hard_ip_0_altgx_internal_alt_c3gxb_svh8_component|pll0|auto_generated|pll1|icdrclk was found missing 1 generated clock that corresponds to a base clock with a period of: 10.000
@@ -1001,9 +1001,9 @@ Info (332146): Worst-case minimum pulse width slack is 16.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 66 warnings
-    Info: Peak virtual memory: 4946 megabytes
-    Info: Processing ended: Mon Oct 17 09:48:05 2022
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 4943 megabytes
+    Info: Processing ended: Wed Oct 26 21:32:56 2022
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:06
 
 

@@ -8,9 +8,10 @@ module pcihellocore (
 	pcie_hard_ip_0_pcie_rstn_export,
 	hexport_external_connection_export,
 	inport_external_connection_export,
-	leds_external_connection_export,
 	display_external_connection_export,
-	butao_external_connection_export);	
+	butao_external_connection_export,
+	ledr_external_connection_export,
+	ledg_external_connection_export);	
 
 	input		pcie_hard_ip_0_rx_in_rx_datain_0;
 	output		pcie_hard_ip_0_tx_out_tx_dataout_0;
@@ -20,7 +21,8 @@ module pcihellocore (
 	input		pcie_hard_ip_0_pcie_rstn_export;
 	output	[31:0]	hexport_external_connection_export;
 	input	[31:0]	inport_external_connection_export;
-	output	[31:0]	leds_external_connection_export;
 	output	[31:0]	display_external_connection_export;
 	input	[31:0]	butao_external_connection_export;
+	output	[31:0]	ledr_external_connection_export;
+	output	[31:0]	ledg_external_connection_export;
 endmodule

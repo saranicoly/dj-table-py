@@ -1,5 +1,5 @@
 Info: Starting: Create block symbol file (.bsf)
-Info: ip-generate --project-directory=D:\Users\lorl\Downloads\mapeamento\pcihello_restored --output-directory=D:\Users\lorl\Downloads\mapeamento\pcihello_restored\pcihellocore --report-file=bsf:D:\Users\lorl\Downloads\mapeamento\pcihello_restored\pcihellocore\pcihellocore.bsf --system-info=DEVICE_FAMILY="Cyclone IV GX" --system-info=DEVICE=EP4CGX150DF31C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=D:\Users\lorl\Downloads\mapeamento\pcihello_restored\pcihellocore.qsys
+Info: ip-generate --project-directory=D:\Users\lorl\Downloads\dj-table-py-master\dj-table-py-master\mapeamento\pcihello_restored --output-directory=D:\Users\lorl\Downloads\dj-table-py-master\dj-table-py-master\mapeamento\pcihello_restored\pcihellocore --report-file=bsf:D:\Users\lorl\Downloads\dj-table-py-master\dj-table-py-master\mapeamento\pcihello_restored\pcihellocore\pcihellocore.bsf --system-info=DEVICE_FAMILY="Cyclone IV GX" --system-info=DEVICE=EP4CGX150DF31C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=D:\Users\lorl\Downloads\dj-table-py-master\dj-table-py-master\mapeamento\pcihello_restored\pcihellocore.qsys
 Progress: Loading pcihello_restored/pcihellocore.qsys
 Progress: Reading input file
 Progress: Adding hexport [altera_avalon_pio 14.0]
@@ -10,75 +10,8 @@ Progress: Adding pcie_hard_ip_0 [altera_pcie_hard_ip 14.0]
 Progress: Parameterizing module pcie_hard_ip_0
 Progress: Adding leds [altera_avalon_pio 14.0]
 Progress: Parameterizing module leds
-Progress: Adding buttons [altera_avalon_pio 14.0]
-Progress: Parameterizing module buttons
-Progress: Adding display [altera_avalon_pio 14.0]
-Progress: Parameterizing module display
-Progress: Building connections
-Progress: Parameterizing connections
-Progress: Validating
-Progress: Done reading input file
-Info: pcihellocore.pcihellocore: There are recommended upgrades for: pcie_hard_ip_0
-Warning: pcihellocore.pcihellocore: Module dependency loop involving: "pcie_hard_ip_0" (altera_pcie_hard_ip 14.0), "hexport" (altera_avalon_pio 14.0)
-Info: pcihellocore.inport: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Info: pcihellocore.pcie_hard_ip_0:  Rx Master BAR 0 mapped to 16 -bit Avalon-MM address
-Warning: pcihellocore.pcie_hard_ip_0.pcie_hard_ip_0: Module dependency loop involving: "pcie_internal_hip" (altera_pcie_internal_hard_ip_qsys 14.0)
-Warning: pcihellocore.pcie_hard_ip_0.pcie_hard_ip_0: Module dependency loop involving: "avalon_clk" (altera_clock_bridge 14.0), "pcie_internal_hip" (altera_pcie_internal_hard_ip_qsys 14.0)
-Info: pcihellocore.pcie_hard_ip_0.pcie_internal_hip:  Txs Address width is 15
-Info: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: Application clock frequency is 125 Mhz 
-Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip.app_msi_ack: Interface has no signals
-Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip.app_msi_num: Interface has no signals
-Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip.app_msi_req: Interface has no signals
-Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip.test_out_export: Interface has no signals
-Info: pcihellocore.pcie_hard_ip_0.altgx_internal: Family: Cyclone IV GX
-Info: pcihellocore.pcie_hard_ip_0.altgx_internal: Lanes: 1
-Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.pcie_core_clk cannot be both connected and exported
-Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.app_msi_ack must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.rc_rx_analogreset must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.rc_rx_digitalreset must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.app_msi_num must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.app_msi_req must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.msi_interface_export must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.tx_deemph_0 must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.tx_margin_0 must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.test_out_export must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.pipe_interface_internal: pipe_interface_internal.pll_powerdown_pcs must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.pipe_interface_internal: pipe_interface_internal.rateswitch_pcs must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.pipe_interface_internal: pipe_interface_internal.rateswitchbaseclock_pcs must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_2 must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_3 must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_4 must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_5 must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_6 must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_7 must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_8 must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_9 must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0.reset_controller_internal: reset_controller_internal.reset_n_out cannot be both connected and exported
-Info: pcihellocore.buttons: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
-Warning: pcihellocore.pcie_hard_ip_0: pcie_hard_ip_0.test_in must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0: pcie_hard_ip_0.clocks_sim must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0: pcie_hard_ip_0.reconfig_busy must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0: pcie_hard_ip_0.pipe_ext must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0: pcie_hard_ip_0.reconfig_togxb must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0: pcie_hard_ip_0.reconfig_fromgxb_0 must be exported, or connected to a matching conduit.
-Warning: pcihellocore.pcie_hard_ip_0: Interrupt sender pcie_hard_ip_0.cra_irq is not connected to an interrupt receiver
-Info: ip-generate succeeded.
-Info: Finished: Create block symbol file (.bsf)
-Info: 
-Info: Starting: Create HDL design files for synthesis
-Info: ip-generate --project-directory=D:\Users\lorl\Downloads\mapeamento\pcihello_restored --output-directory=D:\Users\lorl\Downloads\mapeamento\pcihello_restored\pcihellocore\synthesis --file-set=QUARTUS_SYNTH --report-file=html:D:\Users\lorl\Downloads\mapeamento\pcihello_restored\pcihellocore\pcihellocore.html --report-file=sopcinfo:D:\Users\lorl\Downloads\mapeamento\pcihello_restored\pcihellocore.sopcinfo --report-file=cmp:D:\Users\lorl\Downloads\mapeamento\pcihello_restored\pcihellocore\pcihellocore.cmp --report-file=qip:D:\Users\lorl\Downloads\mapeamento\pcihello_restored\pcihellocore\synthesis\pcihellocore.qip --report-file=svd:D:\Users\lorl\Downloads\mapeamento\pcihello_restored\pcihellocore\synthesis\pcihellocore.svd --report-file=regmap:D:\Users\lorl\Downloads\mapeamento\pcihello_restored\pcihellocore\synthesis\pcihellocore.regmap --report-file=xml:D:\Users\lorl\Downloads\mapeamento\pcihello_restored\pcihellocore\pcihellocore.xml --report-file=debuginfo:D:\Users\lorl\Downloads\mapeamento\pcihello_restored\pcihellocore\synthesis\pcihellocore.debuginfo --system-info=DEVICE_FAMILY="Cyclone IV GX" --system-info=DEVICE=EP4CGX150DF31C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=D:\Users\lorl\Downloads\mapeamento\pcihello_restored\pcihellocore.qsys --language=VERILOG
-Progress: Loading pcihello_restored/pcihellocore.qsys
-Progress: Reading input file
-Progress: Adding hexport [altera_avalon_pio 14.0]
-Progress: Parameterizing module hexport
-Progress: Adding inport [altera_avalon_pio 14.0]
-Progress: Parameterizing module inport
-Progress: Adding pcie_hard_ip_0 [altera_pcie_hard_ip 14.0]
-Progress: Parameterizing module pcie_hard_ip_0
-Progress: Adding leds [altera_avalon_pio 14.0]
-Progress: Parameterizing module leds
-Progress: Adding buttons [altera_avalon_pio 14.0]
-Progress: Parameterizing module buttons
+Progress: Adding butao [altera_avalon_pio 14.0]
+Progress: Parameterizing module butao
 Progress: Adding display [altera_avalon_pio 14.0]
 Progress: Parameterizing module display
 Progress: Building connections
@@ -121,7 +54,74 @@ Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_
 Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_8 must be exported, or connected to a matching conduit.
 Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_9 must be exported, or connected to a matching conduit.
 Warning: pcihellocore.pcie_hard_ip_0.reset_controller_internal: reset_controller_internal.reset_n_out cannot be both connected and exported
-Info: pcihellocore.buttons: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: pcihellocore.butao: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: pcihellocore.pcie_hard_ip_0: pcie_hard_ip_0.test_in must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0: pcie_hard_ip_0.clocks_sim must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0: pcie_hard_ip_0.reconfig_busy must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0: pcie_hard_ip_0.pipe_ext must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0: pcie_hard_ip_0.reconfig_togxb must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0: pcie_hard_ip_0.reconfig_fromgxb_0 must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0: Interrupt sender pcie_hard_ip_0.cra_irq is not connected to an interrupt receiver
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=D:\Users\lorl\Downloads\dj-table-py-master\dj-table-py-master\mapeamento\pcihello_restored --output-directory=D:\Users\lorl\Downloads\dj-table-py-master\dj-table-py-master\mapeamento\pcihello_restored\pcihellocore\synthesis --file-set=QUARTUS_SYNTH --report-file=html:D:\Users\lorl\Downloads\dj-table-py-master\dj-table-py-master\mapeamento\pcihello_restored\pcihellocore\pcihellocore.html --report-file=sopcinfo:D:\Users\lorl\Downloads\dj-table-py-master\dj-table-py-master\mapeamento\pcihello_restored\pcihellocore.sopcinfo --report-file=cmp:D:\Users\lorl\Downloads\dj-table-py-master\dj-table-py-master\mapeamento\pcihello_restored\pcihellocore\pcihellocore.cmp --report-file=qip:D:\Users\lorl\Downloads\dj-table-py-master\dj-table-py-master\mapeamento\pcihello_restored\pcihellocore\synthesis\pcihellocore.qip --report-file=svd:D:\Users\lorl\Downloads\dj-table-py-master\dj-table-py-master\mapeamento\pcihello_restored\pcihellocore\synthesis\pcihellocore.svd --report-file=regmap:D:\Users\lorl\Downloads\dj-table-py-master\dj-table-py-master\mapeamento\pcihello_restored\pcihellocore\synthesis\pcihellocore.regmap --report-file=xml:D:\Users\lorl\Downloads\dj-table-py-master\dj-table-py-master\mapeamento\pcihello_restored\pcihellocore\pcihellocore.xml --report-file=debuginfo:D:\Users\lorl\Downloads\dj-table-py-master\dj-table-py-master\mapeamento\pcihello_restored\pcihellocore\synthesis\pcihellocore.debuginfo --system-info=DEVICE_FAMILY="Cyclone IV GX" --system-info=DEVICE=EP4CGX150DF31C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=D:\Users\lorl\Downloads\dj-table-py-master\dj-table-py-master\mapeamento\pcihello_restored\pcihellocore.qsys --language=VERILOG
+Progress: Loading pcihello_restored/pcihellocore.qsys
+Progress: Reading input file
+Progress: Adding hexport [altera_avalon_pio 14.0]
+Progress: Parameterizing module hexport
+Progress: Adding inport [altera_avalon_pio 14.0]
+Progress: Parameterizing module inport
+Progress: Adding pcie_hard_ip_0 [altera_pcie_hard_ip 14.0]
+Progress: Parameterizing module pcie_hard_ip_0
+Progress: Adding leds [altera_avalon_pio 14.0]
+Progress: Parameterizing module leds
+Progress: Adding butao [altera_avalon_pio 14.0]
+Progress: Parameterizing module butao
+Progress: Adding display [altera_avalon_pio 14.0]
+Progress: Parameterizing module display
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: pcihellocore.pcihellocore: There are recommended upgrades for: pcie_hard_ip_0
+Warning: pcihellocore.pcihellocore: Module dependency loop involving: "pcie_hard_ip_0" (altera_pcie_hard_ip 14.0), "hexport" (altera_avalon_pio 14.0)
+Info: pcihellocore.inport: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: pcihellocore.pcie_hard_ip_0:  Rx Master BAR 0 mapped to 16 -bit Avalon-MM address
+Warning: pcihellocore.pcie_hard_ip_0.pcie_hard_ip_0: Module dependency loop involving: "pcie_internal_hip" (altera_pcie_internal_hard_ip_qsys 14.0)
+Warning: pcihellocore.pcie_hard_ip_0.pcie_hard_ip_0: Module dependency loop involving: "pcie_internal_hip" (altera_pcie_internal_hard_ip_qsys 14.0), "avalon_clk" (altera_clock_bridge 14.0)
+Info: pcihellocore.pcie_hard_ip_0.pcie_internal_hip:  Txs Address width is 15
+Info: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: Application clock frequency is 125 Mhz 
+Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip.app_msi_ack: Interface has no signals
+Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip.app_msi_num: Interface has no signals
+Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip.app_msi_req: Interface has no signals
+Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip.test_out_export: Interface has no signals
+Info: pcihellocore.pcie_hard_ip_0.altgx_internal: Family: Cyclone IV GX
+Info: pcihellocore.pcie_hard_ip_0.altgx_internal: Lanes: 1
+Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.pcie_core_clk cannot be both connected and exported
+Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.app_msi_ack must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.rc_rx_analogreset must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.rc_rx_digitalreset must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.app_msi_num must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.app_msi_req must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.msi_interface_export must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.tx_deemph_0 must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.tx_margin_0 must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.pcie_internal_hip: pcie_internal_hip.test_out_export must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.pipe_interface_internal: pipe_interface_internal.pll_powerdown_pcs must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.pipe_interface_internal: pipe_interface_internal.rateswitch_pcs must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.pipe_interface_internal: pipe_interface_internal.rateswitchbaseclock_pcs must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_2 must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_3 must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_4 must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_5 must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_6 must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_7 must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_8 must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.refclk_conduit: refclk_conduit.conduit_out_9 must be exported, or connected to a matching conduit.
+Warning: pcihellocore.pcie_hard_ip_0.reset_controller_internal: reset_controller_internal.reset_n_out cannot be both connected and exported
+Info: pcihellocore.butao: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Warning: pcihellocore.pcie_hard_ip_0: pcie_hard_ip_0.test_in must be exported, or connected to a matching conduit.
 Warning: pcihellocore.pcie_hard_ip_0: pcie_hard_ip_0.clocks_sim must be exported, or connected to a matching conduit.
 Warning: pcihellocore.pcie_hard_ip_0: pcie_hard_ip_0.reconfig_busy must be exported, or connected to a matching conduit.
@@ -131,18 +131,14 @@ Warning: pcihellocore.pcie_hard_ip_0: pcie_hard_ip_0.reconfig_fromgxb_0 must be 
 Warning: pcihellocore.pcie_hard_ip_0: Interrupt sender pcie_hard_ip_0.cra_irq is not connected to an interrupt receiver
 Info: pcihellocore: Generating pcihellocore "pcihellocore" for QUARTUS_SYNTH
 Info: hexport: Starting RTL generation for module 'pcihellocore_hexport'
-Info: hexport:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=pcihellocore_hexport --dir=D:/Users/lorl/AppData/Local/Temp/alt9272_175904667458141681.dir/0049_hexport_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=D:/Users/lorl/AppData/Local/Temp/alt9272_175904667458141681.dir/0049_hexport_gen//pcihellocore_hexport_component_configuration.pl  --do_build_sim=0  ]
+Info: hexport:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=pcihellocore_hexport --dir=D:/Users/lorl/AppData/Local/Temp/alt9290_5271733272883342832.dir/0002_hexport_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=D:/Users/lorl/AppData/Local/Temp/alt9290_5271733272883342832.dir/0002_hexport_gen//pcihellocore_hexport_component_configuration.pl  --do_build_sim=0  ]
 Info: hexport: Done RTL generation for module 'pcihellocore_hexport'
 Info: hexport: "pcihellocore" instantiated altera_avalon_pio "hexport"
 Info: inport: Starting RTL generation for module 'pcihellocore_inport'
-Info: inport:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=pcihellocore_inport --dir=D:/Users/lorl/AppData/Local/Temp/alt9272_175904667458141681.dir/0050_inport_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=D:/Users/lorl/AppData/Local/Temp/alt9272_175904667458141681.dir/0050_inport_gen//pcihellocore_inport_component_configuration.pl  --do_build_sim=0  ]
+Info: inport:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=pcihellocore_inport --dir=D:/Users/lorl/AppData/Local/Temp/alt9290_5271733272883342832.dir/0003_inport_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=D:/Users/lorl/AppData/Local/Temp/alt9290_5271733272883342832.dir/0003_inport_gen//pcihellocore_inport_component_configuration.pl  --do_build_sim=0  ]
 Info: inport: Done RTL generation for module 'pcihellocore_inport'
 Info: inport: "pcihellocore" instantiated altera_avalon_pio "inport"
 Info: pcie_hard_ip_0: "pcihellocore" instantiated altera_pcie_hard_ip "pcie_hard_ip_0"
-Info: buttons: Starting RTL generation for module 'pcihellocore_buttons'
-Info: buttons:   Generation command is [exec C:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/14.0/quartus/bin64/perl/lib -I C:/altera/14.0/quartus/sopc_builder/bin/europa -I C:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/14.0/quartus/sopc_builder/bin -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=pcihellocore_buttons --dir=D:/Users/lorl/AppData/Local/Temp/alt9272_175904667458141681.dir/0051_buttons_gen/ --quartus_dir=C:/altera/14.0/quartus --verilog --config=D:/Users/lorl/AppData/Local/Temp/alt9272_175904667458141681.dir/0051_buttons_gen//pcihellocore_buttons_component_configuration.pl  --do_build_sim=0  ]
-Info: buttons: Done RTL generation for module 'pcihellocore_buttons'
-Info: buttons: "pcihellocore" instantiated altera_avalon_pio "buttons"
 Info: mm_interconnect_0: "pcihellocore" instantiated altera_mm_interconnect "mm_interconnect_0"
 Info: irq_mapper: "pcihellocore" instantiated altera_irq_mapper "irq_mapper"
 Info: rst_controller: "pcihellocore" instantiated altera_reset_controller "rst_controller"
@@ -162,17 +158,17 @@ Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
 Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
 Info: pcie_hard_ip_0_bar0_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "pcie_hard_ip_0_bar0_limiter"
-Info: Reusing file D:/Users/lorl/Downloads/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file D:/Users/lorl/Downloads/dj-table-py-master/dj-table-py-master/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_avalon_sc_fifo.v
 Info: pcie_hard_ip_0_cra_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "pcie_hard_ip_0_cra_burst_adapter"
-Info: Reusing file D:/Users/lorl/Downloads/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: Reusing file D:/Users/lorl/Downloads/dj-table-py-master/dj-table-py-master/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_avalon_st_pipeline_base.v
 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
-Info: Reusing file D:/Users/lorl/Downloads/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: Reusing file D:/Users/lorl/Downloads/dj-table-py-master/dj-table-py-master/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: pcie_hard_ip_0_cra_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "pcie_hard_ip_0_cra_rsp_width_adapter"
-Info: Reusing file D:/Users/lorl/Downloads/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_address_alignment.sv
-Info: Reusing file D:/Users/lorl/Downloads/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_burst_uncompressor.sv
-Info: pcihellocore: Done "pcihellocore" with 27 modules, 65 files
+Info: Reusing file D:/Users/lorl/Downloads/dj-table-py-master/dj-table-py-master/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file D:/Users/lorl/Downloads/dj-table-py-master/dj-table-py-master/mapeamento/pcihello_restored/pcihellocore/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: pcihellocore: Done "pcihellocore" with 26 modules, 64 files
 Info: ip-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

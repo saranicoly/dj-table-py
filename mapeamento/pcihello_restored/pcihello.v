@@ -91,7 +91,8 @@ inout 		          		FAN_CTRL;
 wire [31:0] hexbus;
 wire [31:0] inbus;
 wire [31:0] butao;
-wire [31:0] leds;
+wire [31:0] ledG;
+wire [31:0] ledR;
 wire [31:0] display;
 
 
@@ -108,7 +109,8 @@ wire [31:0] display;
         .pcie_hard_ip_0_pcie_rstn_export        (PCIE_PERST_N),
         .hexport_external_connection_export     (hexbus),     // hexport_external_connection.export
         .inport_external_connection_export      (inbus),       //  inport_external_connection.export
-		  .leds_external_connection_export			(leds),
+		  .ledg_external_connection_export			(ledG),
+		  .ledr_external_connection_export			(ledR),
 		  .display_external_connection_export     (display),
 		  .butao_external_connection_export       (butao),
 	 
@@ -126,8 +128,8 @@ assign HEX3 = hexbus[30:24];
 
 assign inbus[17:0] = SW;
 assign butao[3:0] = KEY;
-assign LEDG = leds[8:0];
-assign LEDR = leds[25:9];
+assign LEDG = ledG[8:0];
+assign LEDR = ledR[17:0];
 assign HEX4 = display[6: 0];
 assign HEX5 = display[14: 8];
 assign HEX6 = display[22:16];
