@@ -7,8 +7,9 @@
 		.pcie_hard_ip_0_pcie_rstn_export        (<connected-to-pcie_hard_ip_0_pcie_rstn_export>),        //    pcie_hard_ip_0_pcie_rstn.export
 		.hexport_external_connection_export     (<connected-to-hexport_external_connection_export>),     // hexport_external_connection.export
 		.inport_external_connection_export      (<connected-to-inport_external_connection_export>),      //  inport_external_connection.export
-		.leds_external_connection_export        (<connected-to-leds_external_connection_export>),        //    leds_external_connection.export
 		.display_external_connection_export     (<connected-to-display_external_connection_export>),     // display_external_connection.export
-		.butao_external_connection_export       (<connected-to-butao_external_connection_export>)        //   butao_external_connection.export
+		.butao_external_connection_export       (<connected-to-butao_external_connection_export>),       //   butao_external_connection.export
+		.ledr_external_connection_export        (<connected-to-ledr_external_connection_export>),        //    ledr_external_connection.export
+		.ledg_external_connection_export        (<connected-to-ledg_external_connection_export>)         //    ledg_external_connection.export
 	);
 

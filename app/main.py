@@ -32,6 +32,8 @@ def toggle_music(state, args):
     else:
         pygame.mixer.Channel(music_number).stop()
 
+def testing():
+    toggle_music(state=1, args=(1,))
 
 load_songs()
 
@@ -45,7 +47,7 @@ for i in range(len(song_list)):
         switch_height=0.8,
         switch_margin=(12, 0),
         toggleswitch_id=str(i),
-        onchange=toggle_music,
+        onchange=testing(),
         args=(i,),
         align=pygame_menu.locals.ALIGN_RIGHT,
     )

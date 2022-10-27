@@ -16,7 +16,7 @@
    {
       datum _sortIndex
       {
-         value = "3";
+         value = "4";
          type = "int";
       }
    }
@@ -32,7 +32,7 @@
    {
       datum _sortIndex
       {
-         value = "4";
+         value = "5";
          type = "int";
       }
    }
@@ -52,7 +52,7 @@
          type = "int";
       }
    }
-   element leds
+   element ledG
    {
       datum _sortIndex
       {
@@ -65,11 +65,24 @@
          type = "boolean";
       }
    }
+   element ledR
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
    element pcie_hard_ip_0
    {
       datum _sortIndex
       {
-         value = "5";
+         value = "6";
          type = "int";
       }
    }
@@ -153,11 +166,6 @@
    type="conduit"
    dir="end" />
  <interface
-   name="leds_external_connection"
-   internal="leds.external_connection"
-   type="conduit"
-   dir="end" />
- <interface
    name="display_external_connection"
    internal="display.external_connection"
    type="conduit"
@@ -165,6 +173,16 @@
  <interface
    name="butao_external_connection"
    internal="butao.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="ledr_external_connection"
+   internal="ledR.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="ledg_external_connection"
+   internal="ledG.external_connection"
    type="conduit"
    dir="end" />
  <module kind="altera_avalon_pio" version="14.0" enabled="1" name="hexport">
@@ -319,7 +337,7 @@
   <parameter name="AUTO_CAL_BLK_CLK_RESET_DOMAIN" value="1" />
   <parameter name="AUTO_DEVICE" value="EP4CGX150DF31C7" />
  </module>
- <module kind="altera_avalon_pio" version="14.0" enabled="1" name="leds">
+ <module kind="altera_avalon_pio" version="14.0" enabled="1" name="ledR">
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
   <parameter name="captureEdge" value="false" />
@@ -348,6 +366,20 @@
   <parameter name="clockRate" value="125000000" />
  </module>
  <module kind="altera_avalon_pio" version="14.0" enabled="1" name="display">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+  <parameter name="clockRate" value="125000000" />
+ </module>
+ <module kind="altera_avalon_pio" version="14.0" enabled="1" name="ledG">
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
   <parameter name="captureEdge" value="false" />
@@ -418,11 +450,6 @@
    start="pcie_hard_ip_0.pcie_core_clk"
    end="pcie_hard_ip_0.reconfig_gxbclk" />
  <connection
-   kind="clock"
-   version="14.0"
-   start="pcie_hard_ip_0.pcie_core_clk"
-   end="pcie_hard_ip_0.fixedclk" />
- <connection
    kind="reset"
    version="14.0"
    start="pcie_hard_ip_0.pcie_core_reset"
@@ -436,12 +463,12 @@
    kind="clock"
    version="14.0"
    start="pcie_hard_ip_0.pcie_core_clk"
-   end="leds.clk" />
+   end="ledR.clk" />
  <connection
    kind="reset"
    version="14.0"
    start="pcie_hard_ip_0.pcie_core_reset"
-   end="leds.reset" />
+   end="ledR.reset" />
  <connection
    kind="reset"
    version="14.0"
@@ -456,7 +483,7 @@
    kind="avalon"
    version="14.0"
    start="pcie_hard_ip_0.bar0"
-   end="leds.s1">
+   end="ledR.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0xc040" />
   <parameter name="defaultConnection" value="false" />
@@ -489,6 +516,30 @@
   <parameter name="baseAddress" value="0xc080" />
   <parameter name="defaultConnection" value="false" />
  </connection>
+ <connection
+   kind="clock"
+   version="14.0"
+   start="pcie_hard_ip_0.pcie_core_clk"
+   end="ledG.clk" />
+ <connection
+   kind="avalon"
+   version="14.0"
+   start="pcie_hard_ip_0.bar0"
+   end="ledG.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0xc0a0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="clock"
+   version="14.0"
+   start="pcie_hard_ip_0.pcie_core_clk"
+   end="pcie_hard_ip_0.fixedclk" />
+ <connection
+   kind="reset"
+   version="14.0"
+   start="pcie_hard_ip_0.pcie_core_reset"
+   end="ledG.reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
 </system>
