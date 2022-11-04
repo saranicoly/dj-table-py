@@ -1,8 +1,9 @@
 import os
 import pygame
 import pygame_menu
-import os, sys
+import sys
 from fcntl import ioctl
+#os.environ['SDL_AUDIODRIVER']='dsp'
 
 # ioctl commands defined at the pci driver
 RD_SWITCHES   = 24929
@@ -32,10 +33,32 @@ def load_songs():
             song_list.append(f"songs/{file}")
     pygame.mixer.set_num_channels(len(song_list))
 
-
 def toggle_music(state, args):
     music_number = args[0]
-    if state:
+    #state=switch_state(music_number)
+    fd = os.open(sys.argv[1], os.O_RDWR)
+    ioctl(fd, RD_SWITCHES)
+    red = os.read(fd, 4); # read 4 bytes and store in red var
+    red = int.from_bytes(red, 'little')
+    #red = bin(red)
+    red = format(red, 'b')
+    red = red[::-1]
+    print("red = ", red)
+
+    play = False
+ 
+    if red[music_number] == '1':
+        play = True
+    else:
+        play = False
+    
+    print("music number = ", music_number)
+    print("red[mn] = ", red[music_number])
+    print("play = ", play)
+    print("state = ", state)
+
+    if (state and play):
+    #if red[music_number] == 1:
         pygame.mixer.Channel(music_number).play(
             pygame.mixer.Sound(song_list[music_number])
         )
@@ -49,13 +72,6 @@ if len(sys.argv) < 2:
 
 fd = os.open(sys.argv[1], os.O_RDWR)
 
-def ativa_musica(music_number):
-    ioctl(fd, RD_SWITCHES)
-    red = os.read(fd, 4); # read 4 bytes and store in red var
-    red = int.from_bytes(red, 'little')
-
-    if (red % 4 == 0):
-        toggle_music(state=1, args=[music_number])
 
 
 load_songs()
@@ -70,7 +86,7 @@ for i in range(len(song_list)):
         switch_height=0.8,
         switch_margin=(12, 0),
         toggleswitch_id=str(i),
-        onchange=ativa_musica(i),
+        onchange=toggle_music,
         args=(i,),
         align=pygame_menu.locals.ALIGN_RIGHT,
     )
